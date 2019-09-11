@@ -89,14 +89,13 @@ var PUZZLE = {
 	paintBG : function() {
 		PS.color(PS.ALL, PS.ALL, PS.COLOR_BLUE);
 		PS.data(PS.ALL, PS.ALL, 0);
-    PS.border(PS.ALL, PS.ALL, 0);
 	},
 
 	setup : function() {
 		PS.gridSize(PUZZLE.width, PUZZLE.height);
 		PS.gridColor(PUZZLE.bgColor);
 		PUZZLE.paintBG();
-		PS.border(PS.ALL, PS.ALL, 1);
+		PS.border(PS.ALL, PS.ALL, 0);
 		PS.statusText("");
 		//print(level_string);
 		PUZZLE.current_level = loadLevel(level_string[PUZZLE.level_counter]);
